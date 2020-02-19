@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+       
+    <string-array name="auto">
+               
+        <item>小件 小于30kg</item>
+               
+        <item>大件 大于30kg</item>
+           
+    </string-array>
+
+
+    <string-array name="reason">
+               
+        <item>物件损坏</item>
+               
+        <item>快递员服务态度极其恶劣</item>
+
+        <item>送货时间短</item>
+
+        <item>其他</item>
+           
+    </string-array>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <ImageView
+        android:id="@+id/signuplogo"
+        android:layout_width="81dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/login"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameit"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Username:"
+        android:textColor="@color/login_form_details"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/signuplogo" />
+
+    <EditText
+        android:id="@+id/usernameinfo"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:hint="Username"
+        android:editable="false"
+        android:padding="20dp"
+        android:textColorHint="@color/login_form_details"
+        android:background="@drawable/et_bg"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/usernameit" />
+
+
+
+    <TextView
+        android:id="@+id/phoneit"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Phone:"
+        android:textColor="@color/login_form_details"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/usernameinfo" />
+
+    <EditText
+        android:id="@+id/phoneinfo"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:hint="Phone"
+        android:editable="false"
+        android:padding="20dp"
+        android:textColorHint="@color/login_form_details"
+        android:background="@drawable/et_bg"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/phoneit" />
+
+    <TextView
+        android:id="@+id/realnameit"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Realname:"
+        android:textColor="@color/login_form_details"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/phoneinfo" />
+
+    <EditText
+        android:id="@+id/real_nameinfo"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:hint="Real name"
+        android:padding="20dp"
+        android:editable="false"
+        android:textColorHint="@color/login_form_details"
+        android:background="@drawable/et_bg"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/realnameit" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/real_nameinfo" />
+
+
+</android.support.constraint.ConstraintLayout>
